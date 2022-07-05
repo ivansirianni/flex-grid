@@ -70,13 +70,8 @@ img {
 }
 
  /* --- header --- */
-.container{
-    height: 100vh;
-    display: grid;
-    grid-template-areas: "header"
-    "main"
-    "footer";
-}
+ 
+
 header{
     grid-area: header;
     display: flex;

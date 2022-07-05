@@ -70,7 +70,14 @@ img {
 }
 
  /* --- header --- */
+.container{
+    display: grid;
+    grid-template-areas: "header"
+    "main"
+    "footer";
+}
 header{
+    grid-area: header;
     display: flex;
     justify-content: space-around; /*sobre el eje horizontal*/
     align-items: center; /* Sobre el eje vertical*/
@@ -96,7 +103,8 @@ header{
 
 
 /*--FOOTER--*/
-footer{    
+footer{ 
+    grid-area: footer;   
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     justify-content: space-around; /*sobre el eje horizontal*/
@@ -144,7 +152,7 @@ footer{
 
 /*---MAIN---*/
 .main__container{
-    
+    grid-area: main;
     margin: 0 auto;
     margin-top: var(--spacing-small);
 }

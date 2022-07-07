@@ -26,7 +26,7 @@
     /* ---------Font-Sizes */
     /* mobile */
     --text-large: 12vw;
-    --text-medium: 6vw;
+    --text-medium: 4vw;
     --text-xmedium:8vw;
     --text-base: 3.3vw;
     --text-small: 3vw;
@@ -284,6 +284,51 @@ footer{
     text-align: center;
 }
 
+/*seccion info*/
+
+.info__container p{
+    margin-left: var(--spacing-large);
+    margin-right:  var(--spacing-large);
+    margin-bottom:  var(--spacing-large);
+    font-size: var(--text-small);
+}
+.info__container h3{
+    font-family: var(--font-title);
+    font-size: var(--text-medium);
+    color: var(--primary);
+}
+.info__container{
+    display: flex;
+    flex-direction: column;
+    padding: var(--spacing-medium);
+}
+.info__carne{
+    
+    display: flex;
+}
+.info__verdu{
+    
+    display: flex;
+}
+.info__frutas{
+    
+    display: flex;
+}
+.info__legumbres{
+   
+    display:flex
+}
+.info__pic{
+    width: 200%;
+    height: 200%;
+}
+.info__art{    
+    text-align: center;
+}
+.info__art p{
+    font-style: italic;
+}
+
 /* media query 480px min a 768 max */
 @media screen and (min-width: 480px){
     .header__img{
@@ -352,6 +397,18 @@ footer{
     .video__h3{
         font-size: var(--text-m);
     }
+    .info__container p{        
+        font-size: var(--text-s);
+    }
+    .info__container h3{
+       
+        font-size: var(--text-m);
+    }
+    .info__pic{
+        width: 100rem;
+        
+    }
+        
 }
 
 /* media query 768px min a 1023 max */
@@ -372,6 +429,37 @@ footer{
      .menu__link:hover{
         border-color: var(--alternative);
     }
+    .info__carne{
+    
+        display: flex;
+        flex-direction: column;
+    }
+    .info__verdu{
+        
+        display: flex;
+        flex-direction: column;
+    }
+    .info__frutas{
+        
+        display: flex;
+        flex-direction: column;
+    }
+    .info__legumbres{
+       
+        display:flex;
+        flex-direction: column;
+    }
+    .info__pic{
+        width: 70%;
+        margin-left: 15%;
+        margin-bottom: 5%;
+    }
+    .info__container p{        
+        font-size: var(--text-s);
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    
 }
 
 /* media query 1024px en adelante*/
@@ -383,6 +471,11 @@ footer{
     .box__info h3{        
         font-size: var(--text-m);
         color: var(--primary);
+    }
+    .info__pic{
+        width: 50%;
+        margin-left: 27%;
+        
     }
 }
           

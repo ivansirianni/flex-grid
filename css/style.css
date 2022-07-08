@@ -329,6 +329,36 @@ footer{
 .info__art p{
     font-style: italic;
 }
+/* seccion formulario*/
+.form__container{    
+    width: 80vh;
+    height: 80vh;
+}
+form {    
+    width  : 70vw;
+    height : 80vh;
+    margin : 0 auto;
+    padding: var(--spacing-medium);
+    box-sizing: border-box;
+    background : #FFF;   
+  }
+#nombre{
+    width: 30vw;
+}
+#email{
+    width: 45vw;
+}
+.form__otro{
+    width: 45vw;
+}
+textarea{
+    width: 70vw;
+    height: 30vh;
+}
+#enviar{
+width: 25vw;
+}
+
 
 /* media query 480px min a 768 max */
 @media screen and (min-width: 480px){

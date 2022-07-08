@@ -34,6 +34,23 @@
             <h2 class="seccion2__h2">Nos interesa tu opinión. Contáctanos</h2>
             <p>Déjanos tus datos y un comentario. Aceptamos todo tipo de sugerencia.</p>
         </div>
+        <section class="form__container">            
+            <form class="form" action="">
+                <label for="nombre" class="form__nombre">Nombre (Requerido)</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Ingrese su Nombre">
+                <label for="email" class="form__email">Correo Electrónico (Requerido)</label>
+                <input type="email" name="email" id="email" placeholder="Ingrese su e-mail">
+                <p class="form__p">Sobre qué tema le gustaria consultar</p>
+                <input type="checkbox" name="cb1" id="cb1">Alimentación Saludable
+                <input type="checkbox" name="cb2" id="cb1">Ayurveda
+                <input type="checkbox" name="cb3" id="cb1">MEDITACIÓN
+                <input type="checkbox" name="cb4" id="cb1">Planes alimenticios
+                <input type="checkbox" name="cb5" id="cb1">Otro
+                <input type="text" name="otro" class="form__otro" placeholder="Si eligió otro, especifique">
+                <label for="comentario" class="form__textarea">Deje su consulta por favor.</label>
+                <textarea name="consulta" id="consulta" cols="50" rows="10" maxlength="500" placeholder="Ingrese su consulta en un maximo de 500 caracteres"></textarea>
+                <input type="submit" name="enviar" id=enviar" value="Enviar">
+            </form>
     </main>
     <footer class="footer__container">
         <ul class="footer__menu">
